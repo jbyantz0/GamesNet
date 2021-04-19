@@ -1,0 +1,326 @@
+/* Master Styles- Control the layout of the website*/
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+footer {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+/*sets the container for the nav bar */
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/*sets the container for the body */
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: rgb(141, 150, 131);
+}
+
+/*sets the container for the game pages */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: rgb(141, 150, 131);
+    height: 756px;
+}
+
+/*sets the container for the footer */
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(141, 150, 131)
+}
+
+.containerA {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: rgb(141, 150, 131);
+    height: 900px;
+}
+
+.containerB {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: rgb(141, 150, 131);
+    height: 757px;
+}
+
+/*  Styles of the Navigation links */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+/* styles the footer */
+.foot-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* sets display for top left nav bar */
+.left-side {
+    display: flex;
+}
+
+/* sets display for the bottom left footer*/
+.b-left-side {
+    display: flex;
+}
+
+/* deals with top right nav bar  */
+.nav-wrapper > .right-side > .brand {
+    margin-left: 20px;
+    font-size: 0.92em;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+
+/* deals with nav bar on game pages */
+.nav-wrapper > .right-side > .brand1 {
+    margin-left: 20px;
+    font-size: 0.92em;
+    text-transform: uppercase;
+    color: #8a8a8a;
+}
+
+/* makes top left nav bar uppercase*/
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform:uppercase; 
+}
+
+/* makes bottom left footer uppercase and underlined */
+.foot-wrapper > .b-left-side > div {
+    margin-left: 350px;
+    font-size: 0.9em;
+    text-transform:uppercase; 
+}
+
+/* makes bottom right footer uppercase and underlined */
+.foot-wrapper > .b-right-side > div {
+    margin-right: 350px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+/* adds underline to top left nav bar */
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent black;
+    transition: border-bottom 0.5s;
+}
+
+/* adds transitional underline to right footer links*/
+.foot-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent white;
+    transition: border-bottom 0.5s;
+}
+
+/* makes the top left grey */
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* makes footer white text */
+.foot-link-wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* makes the nav bar links black when mouse hovers*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper:hover {
+    color: black; 
+}
+
+/* makes the footer links black */
+.foot-link-wrapper a:hover {
+    border-bottom: 1px solid black;
+}
+.foot-link-wrapper a:hover {
+    color: black;
+}
+
+
+/* */
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+/* */
+.active-nav-link a {
+    color: black !important;
+}
+
+
+
+
+.games-items-wrapper { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.games-item-wrapper{
+    position: relative;
+}
+
+/* aligns the images for the games */
+.game-img-background{ 
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* alligns the text over the images */
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Justify is left to right */
+    align-items: center;     /* Align is top to bottom */
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+/* aligns text game descriptions */
+.img-text-wrappers {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Justify is left to right */
+    align-items: center;     /* Align is top to bottom */
+    height: 100%;
+    text-align: center;
+    padding-left: 140px;
+    padding-right: 100px;
+    font-size: 1.2em;
+}
+
+/* makes text disapear until they hover over image */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    width: 50%
+}
+
+.img-text-wrapper .subtitle a {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/* changes image text color and boldness */
+.img-text-wrapper:hover .subtitle { 
+    font-weight: 600;         /* make things bold */
+    color: rgb(17, 104, 17);
+}
+
+.img-text-wrapper:hover .subtitle a { 
+    font-weight: 600;         /* make things bold */
+    color: rgb(255, 255, 255);
+}
+
+.subtitle1 {
+    font-weight: 600;
+    color: white;
+    justify-content: center;
+
+}
+
+/* makes the images darker when they hover over images */
+.img-darken {
+    transition: 1s;
+    filter: brightness(30%);
+}
+
+/* About Page*/
+.four-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    font-size: 1.2em;
+}
+
+.profile-content-wrapper h2 {
+    color: rgb(30, 126, 30);
+}
+
+.game-page li {
+    padding-top: 20px;
+    height: 30px;
+    padding-left: 32px;
+    font-size: 1.5em;
+}
+
+.game-page h2 {
+    padding-top: 20px;
+    height: 30px;
+    padding-left: 32px;
+    font-size: 1.5em;
+}
+
+.game-page h1 {
+    padding-top: 20px;
+    height: 30px;
+    padding-left: 32px;
+}
+
+.schedule{ 
+    position: static;
+    height: 1050px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.docs-page li {
+    padding-top: 20px;
+    height: 30px;
+    padding-left: 32px;
+    font-size: 1.2em;
+}
+.docs-page h2 {
+    padding-top: 20px;
+    height: 30px;
+    padding-left: 32px;
+    font-size: 1.2em;
+}
+.docs-page a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+
+
+.Ping-Pong {
+    height: 839px;
+    margin: 0;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

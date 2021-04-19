@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "utf-8" />
+    <title> Home Page </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel = "styleSheet" href = "styles.css">
+</head>    
+<body>
+    <div class = "container">  
+        <!-- This is for the header/navigation bar -->
+        <div class = "nav-wrapper"> 
+
+            <div class = "left-side">
+                <div class = "nav-link-wrapper active-nav-link ">
+                    <a href = "index.html">Home</a>
+                </div>
+
+                <div class = "nav-link-wrapper">
+                    <a href = "about.html">About Us</a>
+                </div>   
+
+            </div>
+
+            <div class = "right-side">
+                <div class = "brand">
+                    <div>SCIA 325-001 Group 6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "container1">
+        <!-- this is for the game images/descriptions -->
+        <div class = "content-wrapper">
+            <div class = "games-items-wrapper">
+
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background" style = "background-image: url(GameSiteImages/Serpent.jpg)"></div>
+                    
+                    <div class = "img-text-wrapper" >
+                        <div class = "logo-wrapper">
+                        </div>
+
+                        <div class = "subtitle">
+                            <a href = "game1.html">Serpent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background"></div>
+                    
+                    <div class = "img-text-wrappers" >
+                        <div class = "logo-wrapper">
+                            
+                        </div>
+
+                        <div class = "subtitle1">
+                            <p> This game is titled Serpent! The main objective of this game is to feed a very hungry serpent with food drops which are found at random position on the map. The more ya eat, the bigger ya get! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background"></div>
+                    
+                    <div class = "img-text-wrappers" >
+                        <div class = "logo-wrapper">
+                            
+                        </div>
+
+                        <div class = "subtitle1">
+                            <p> This game is titled Mini Tennis! In this game, the player gets to control an in-game paddle by moving it vertically across the screen. You will play against a virtural opponent and rack up points when one fails to return the ball to the other!  </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background" style = "background-image: url(GameSiteImages/YellowBird.jpg)"></div>
+                    
+                    <div class = "img-text-wrapper" >
+                        <div class = "logo-wrapper">
+                            <img src = >
+                        </div>
+
+                        <div class = "subtitle">
+                            <a href = "game2.html">Flying Bird</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background" style = "background-image: url(GameSiteImages/PingPong.jpg)"></div>
+                    
+                    <div class = "img-text-wrapper" >
+                        <div class = "subtitle">
+                            <a href = "game3.html">Ping Pong</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "games-item-wrapper">
+                    <div class = "game-img-background"></div>
+                    
+                    <div class = "img-text-wrappers" >
+                        <div class = "logo-wrapper">
+                            
+                        </div>
+
+                        <div class = "subtitle1">
+                            This game is titled Ping Pong! Much like Mini Tennis, you play as an in-game paddle by moving it vertically across the screen. In this game, you can challenge a friend to play against you. Rack up points each time you or a friend fails to return the ball! 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- container for the footer -->
+        <div class = "container3">
+            <div class = "foot-wrapper">
+                <div class = "b-left-side">
+                    <div class = "foot-link-wrapper">
+                        <a href = "project.html">Project Documents</a>
+                    </div>   
+                </div>
+    
+                <div class = "b-right-side">
+                    <div class = "foot-link-wrapper">
+                        <a href = "schedule.html">Project Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<!-- use "script" command to run java script in HTML
+     This is to darken the images while mouse is hovering -->
+<script>
+    const gameItems = document.querySelectorAll('.games-item-wrapper')
+
+    gameItems.forEach(gameItem => {
+        gameItem.addEventListener('mouseover', () => {
+           gameItem.childNodes[1].classList.add('img-darken');
+        })
+        gameItem.addEventListener('mouseout', () => {
+           gameItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
